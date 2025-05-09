@@ -23,10 +23,11 @@ dependencies:
   connectivity_plus: ^5.0.2
   flutter_dotenv: ^5.2.1
   flutter_screenutil: ^5.9.3
-  # flutter_native_splash: ^2.4.4
+  flutter_native_splash: ^2.4.4
   # get_it: ^8.0.3
 
-
+ # Responsive
+  
   # #UI
   # animate_do: ^4.2.0
   # fluttertoast: ^8.2.12
