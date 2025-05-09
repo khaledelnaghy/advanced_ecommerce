@@ -49,9 +49,10 @@ dependencies:
   # shared_preferences: ^2.5.3
   # #Freezed
   # freezed_annotation: ^3.0.0
-  #  #Firebase
-  # firebase_core: ^3.13.0
-  # cloud_firestore: ^5.6.7
+  
+   #Firebase
+  firebase_core: ^3.13.0
+  cloud_firestore: ^5.6.7
 
   # #image picker
   # image_picker: ^1.1.2
