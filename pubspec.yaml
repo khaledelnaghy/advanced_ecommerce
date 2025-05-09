@@ -14,10 +14,10 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # #language 
-  # flutter_localizations: 
-  #   sdk: flutter
-  # cupertino_icons: ^1.0.8
+  #language 
+  flutter_localizations: 
+    sdk: flutter
+  cupertino_icons: ^1.0.8
 
   #core 
   connectivity_plus: ^5.0.2
@@ -113,8 +113,8 @@ flutter:
   assets:
     - .env.dev
     - .env.production
-    # - lang/ar.json
-    # - lang/en.json
+    - lang/ar.json
+    - lang/en.json
     - assets/images/core/
     - assets/images/admin/
     - assets/images/customer/
