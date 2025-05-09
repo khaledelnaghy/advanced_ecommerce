@@ -8,7 +8,7 @@ class AdvancedEcommerce extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     
-      home: const ,
+      home: const  Scaffold(),
     );
   }
 }

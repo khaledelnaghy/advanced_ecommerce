@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492063792354",
+    "project_id": "advanced-store-9dff4",
+    "storage_bucket": "advanced-store-9dff4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492063792354:android:37155e0cc79df120f652bb",
+        "android_client_info": {
+          "package_name": "com.example.advanced_ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-0enx-YdWhM3E8pMfYTU8TuqlNnSvqJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
