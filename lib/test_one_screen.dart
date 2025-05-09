@@ -8,7 +8,7 @@ class TestOneScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pink,
+      backgroundColor: Colors.teal,
       appBar: AppBar(
         title: const Text('Test One'),
       ),
@@ -17,7 +17,7 @@ class TestOneScreen extends StatelessWidget {
           onPressed: (){
            context.pushName(AppRoutes.testTwo);
           },
-          child: Text("Go to Test Two" , style: TextStyle(color: Colors.white),),
+          child: Text("Go to Test Two" , style: TextStyle(color: context.color.mainColor),),
           
         ),
       ),
