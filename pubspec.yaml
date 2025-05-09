@@ -87,7 +87,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   very_good_analysis: ^7.0.0
-  flutter_launcher_icons: ^0.14.3
+  flutter_launcher_icons: ^0.13.1
   flutter_lints: ^5.0.0
 
    # dart run build_runner build --delete-conflicting-outputs
@@ -101,9 +101,9 @@ dev_dependencies:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/images/icons/app_icon.jpg"
+  image_path: "assets/icons/app_icon.jpg"
   adaptive_icon_background: "#ffffff"
-  adaptive_icon_foreground:  "assets/images/icons/play_store_512.png"
+  adaptive_icon_foreground:  "assets/icons/play_store_512.png"
 
 flutter:
 
