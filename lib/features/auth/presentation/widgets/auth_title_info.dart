@@ -26,7 +26,7 @@ class AuthTitleInfo extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10.h,
+            height: 5.h,
           ),
           TextApp(
             text: description,

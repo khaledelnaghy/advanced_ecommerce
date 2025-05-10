@@ -6,9 +6,7 @@ import 'package:advanced_ecommerce/core/routes/app_routes.dart';
 import 'package:advanced_ecommerce/core/style/fonts/font_weight_hepler.dart';
 import 'package:advanced_ecommerce/features/auth/presentation/widgets/auth_title_info.dart';
 import 'package:advanced_ecommerce/features/auth/presentation/widgets/dark_lang_buttons.dart';
-import 'package:advanced_ecommerce/features/auth/presentation/widgets/login/login_button.dart';
-import 'package:advanced_ecommerce/features/auth/presentation/widgets/login/login_text_field.dart';
-import 'package:advanced_ecommerce/features/auth/presentation/widgets/sign_up/sign_up_button.dart';
+ import 'package:advanced_ecommerce/features/auth/presentation/widgets/sign_up/sign_up_button.dart';
 import 'package:advanced_ecommerce/features/auth/presentation/widgets/sign_up/sign_up_text_field.dart';
 import 'package:advanced_ecommerce/features/auth/presentation/widgets/sign_up/user_avatar_image.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +25,7 @@ class SignUpBody extends StatelessWidget {
             //Dark Mode and Language
             const DarkLangButtons(),
             SizedBox(
-              height: 25.h,
+              height: 20.h,
             ),
             //welcome Info
             AuthTitleInfo(
