@@ -1,3 +1,6 @@
+import 'package:advanced_ecommerce/core/services/shared_pref/pref_keys.dart';
+import 'package:advanced_ecommerce/core/services/shared_pref/shared_pref.dart';
+
 class FontFamilyHelper {
   FontFamilyHelper._();
 
@@ -5,8 +8,8 @@ class FontFamilyHelper {
   static const String poppinsEnglish = 'Poppins';
 
   static String goLocalizedFontFamily() {
-    // todo : SharedPreferences
-    final currentLang = "ar";
+    
+    final currentLang = SharedPref().getString(PrefKeys.language);
     if (currentLang == "ar") {
       return cairoArabic;
     } else {
