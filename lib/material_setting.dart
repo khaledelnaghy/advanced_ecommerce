@@ -21,7 +21,7 @@ class AdvancedEcommerce extends StatelessWidget {
             minTextAdapt: true,
             child: MaterialApp(
               debugShowCheckedModeBanner: EnvVariables.instance.debugMode,
-              theme: themeLight(),
+              theme: themeDark(),
               builder: (context, widget) {
                 return Scaffold(
                   body: Builder(builder: (context) {
@@ -31,8 +31,8 @@ class AdvancedEcommerce extends StatelessWidget {
                 );
               },
               onGenerateRoute: AppRoutes.onGenerateRoute,
-              initialRoute: AppRoutes.testOne,
-              locale: Locale("ar"),
+              initialRoute: AppRoutes.login,
+              locale: Locale("en"),
               supportedLocales: AppLocalizationsSetup.supportedLocales,
               localeResolutionCallback:
                   AppLocalizationsSetup.localeResolutionCallback,
