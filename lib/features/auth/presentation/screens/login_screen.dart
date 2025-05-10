@@ -13,12 +13,15 @@ class LoginScreen extends StatelessWidget {
       bottomNavigationBar: CustomPaint(
         size: Size(MediaQuery.of(context).size.width, 150.h),
         painter: AuthCustomPainter(
-            gradient: LinearGradient(colors: [
-          context.color.bluePinkLight!,
-          context.color.bluePinkLight!,
-          context.color.bluePinkLight!,
-          context.color.bluePinkDark!,
-        ])),
+          gradient: LinearGradient(
+            colors: [
+              context.color.bluePinkLight!,
+              context.color.bluePinkLight!,
+              context.color.bluePinkLight!,
+              context.color.bluePinkDark!,
+            ],
+          ),
+        ),
       ),
       body: const SafeArea(
         bottom: false,
