@@ -6,14 +6,14 @@ import 'package:advanced_ecommerce/core/utils/app_regx.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class LoginTextField extends StatefulWidget {
-  const LoginTextField({super.key});
+class SignUpTextField extends StatefulWidget {
+  const SignUpTextField({super.key});
 
   @override
-  State<LoginTextField> createState() => _LoginTextFieldState();
+  State<SignUpTextField> createState() => _SignUpTextFieldState();
 }
 
-class _LoginTextFieldState extends State<LoginTextField> {
+class _SignUpTextFieldState extends State<SignUpTextField> {
   bool isShowPassword = true;
   @override
   Widget build(BuildContext context) {
@@ -24,17 +24,32 @@ class _LoginTextFieldState extends State<LoginTextField> {
             duration: 200,
             child: CustomTextField(
               controller: TextEditingController(),
+              hintText: context.translate(LangKeys.fullName),
+              keyboardType: TextInputType.name,
+              validator: (value) {
+                if (value == null || value.isEmpty || value.length < 4) {
+                  return context.translate(LangKeys.validName);
+                }
+                return null;
+              },
+            ),
+          ),
+          SizedBox(height: 20.h),
+          CustomFadeInRight(
+            duration: 200,
+            child: CustomTextField(
+              controller: TextEditingController(),
               hintText: context.translate(LangKeys.email),
               keyboardType: TextInputType.emailAddress,
               validator: (value) {
-                if (!AppRegex.isEmailValid('')) {
+             if (!AppRegex.isEmailValid('')) {
                   return context.translate(LangKeys.validEmail);
                 }
                 return null;
               },
             ),
           ),
-          SizedBox(height: 25.h),
+          SizedBox(height: 20.h),
           CustomFadeInRight(
             duration: 200,
             child: CustomTextField(
