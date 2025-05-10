@@ -4,18 +4,19 @@ import 'package:advanced_ecommerce/core/style/theme/image_extension.dart';
 import 'package:flutter/material.dart';
 
 extension ContextExt on BuildContext {
-
-
-  //Color 
-  MyColors get color =>Theme.of(this).extension<MyColors>()!;
+  //Color
+  MyColors get color => Theme.of(this).extension<MyColors>()!;
 
   //images
-    MyImages get assets =>Theme.of(this).extension<MyImages>()!;
+  MyImages get assets => Theme.of(this).extension<MyImages>()!;
+  
+  // style
+  TextStyle get textStyle => Theme.of(this).textTheme.displaySmall!;
+//Lang
+  String translate(String langKey) {
+    return AppLocalizations.of(this)!.translate(langKey).toString();
+  }
 
-//Lang 
-String translate (String langKey ){
-  return AppLocalizations.of(this)!.translate(langKey).toString();
-}
   Future<dynamic> pushName(String routeName, {Object? arguments}) {
     return Navigator.of(this).pushNamed(routeName, arguments: arguments);
   }
